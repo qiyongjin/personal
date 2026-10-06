@@ -1,0 +1,410 @@
+{
+  "basics": {
+    "name": "戚永金",
+    "headline": "中/高级前端工程师 | 前端偏全栈开发 | AI 应用开发 | React / Vue / Electron / Node.js / Python",
+    "city": "成都",
+    "jobType": "全职",
+    "salary": "薪资面议",
+    "phone": "18587139919",
+    "email": "3131471367@qq.com"
+  },
+  "sections": [
+    {
+      "id": "initial-1",
+      "type": "bullets",
+      "title": "个人优势",
+      "items": [
+        {
+          "id": "initial-2",
+          "text": "具备前端偏全栈开发经验，能够基于 React / Electron 完成企业级 AI 客户端开发，并使用 Node.js / Python 打通模型调用、任务编排、文件处理、日志分析和工具调用链路。"
+        },
+        {
+          "id": "initial-3",
+          "text": "近一年重点参与 AI Agent、RAG 知识库、MCP 接入、Prompt 优化、Skill 工作流和多智能体协作等大模型应用落地，做过视频生成、邮件数据提取、合同审核、图片生成/编辑等企业级垂类Agent场景。"
+        },
+        {
+          "id": "initial-4",
+          "text": "具备研发提效工具建设经验，能够结合监控平台、错误日志、接口异常和代码上下文，让 AI 辅助生成错误分析、修复建议和测试验证点，提升团队问题定位和交付效率。"
+        },
+        {
+          "id": "initial-5",
+          "text": "过往具备 SCRM、中后台、复杂表格、权限体系、前端监控、性能优化和工程化规范经验，能够将 AI 能力落地为稳定、可维护、可交付的业务产品。"
+        }
+      ]
+    },
+    {
+      "id": "initial-30",
+      "type": "skills",
+      "title": "专业技能",
+      "items": [
+        {
+          "id": "initial-6",
+          "title": "AI 应用与 Agent 开发",
+          "points": [
+            {
+              "id": "initial-7",
+              "text": "参与企业级 AI Agent 场景落地，主要负责客户端交互、Agent 配置、任务状态、流式输出、文件上传、执行日志等模块，并配合完成 RAG 检索、Tool Calling、Prompt 模板和 MCP 工具接入相关开发。"
+            },
+            {
+              "id": "initial-8",
+              "text": "参与过视频生成、邮件信息抽取、合同审核、图片生成/编辑等多业务垂类Agent场景开发，能够根据业务目标拆解 Agent 任务流程、工具调用链路和异常兜底策略。"
+            }
+          ]
+        },
+        {
+          "id": "initial-9",
+          "title": "RAG 知识库与检索增强",
+          "points": [
+            {
+              "id": "initial-10",
+              "text": "熟悉企业知识库构建流程，包括文档解析、文本切分、Embedding 向量化、召回检索、重排序、上下文拼接、引用溯源和回答质量优化。"
+            },
+            {
+              "id": "initial-11",
+              "text": "能够结合业务场景优化知识库命中率、回答稳定性和 Prompt 模板，降低大模型幻觉和无效回答。"
+            }
+          ]
+        },
+        {
+          "id": "initial-12",
+          "title": "AI 客户端与桌面应用",
+          "points": [
+            {
+              "id": "initial-13",
+              "text": "熟悉 Electron + React 客户端开发，能够完成桌面端应用架构、窗口通信、状态管理、本地缓存、文件处理、权限控制、异步任务状态展示、流式输出渲染等功能。"
+            },
+            {
+              "id": "initial-14",
+              "text": "具备企业定制版 AI 客户端开发经验，能够支撑不同客户的 Agent 配置、知识库接入和工具能力扩展。"
+            }
+          ]
+        },
+        {
+          "id": "initial-15",
+          "title": "前端技术栈",
+          "points": [
+            {
+              "id": "initial-16",
+              "text": "熟练使用 React、TypeScript、Hooks、React Router、Redux Toolkit / Zustand、Ant Design 等技术开发复杂业务应用。"
+            },
+            {
+              "id": "initial-17",
+              "text": "熟悉 Vue3、Composition API、Pinia、Vue Router、Element Plus、Vite，具备中后台系统、权限体系、复杂表格、数据看板、支付流程、国际化等项目经验。"
+            }
+          ]
+        },
+        {
+          "id": "initial-18",
+          "title": "服务层与工程集成",
+          "points": [
+            {
+              "id": "initial-19",
+              "text": "熟悉 Node.js 服务层开发，能够使用 Express / Koa / NestJS 封装模型调用、用户鉴权、文件上传、任务队列、日志记录和业务接口。"
+            },
+            {
+              "id": "initial-20",
+              "text": "了解 Go 在服务开发中的基础使用，能够配合完成部分接口、工具服务或高性能任务模块开发。"
+            }
+          ]
+        },
+        {
+          "id": "initial-21",
+          "title": "Python 与大模型编排",
+          "points": [
+            {
+              "id": "initial-22",
+              "text": "熟悉 Python 在 AI 应用侧的使用，能够完成模型 API 调用、Agent 编排、RAG 检索流程、数据清洗、任务调度、评测脚本和自动化处理。"
+            },
+            {
+              "id": "initial-23",
+              "text": "熟悉 LangChain、LangGraph 等框架的基础使用，能够基于状态机/工作流方式组织多步骤 Agent 任务。"
+            }
+          ]
+        },
+        {
+          "id": "initial-24",
+          "title": "可观测性与 AI 研发提效",
+          "points": [
+            {
+              "id": "initial-25",
+              "text": "具备前端/客户端异常监控、接口耗时监控、日志采集、错误聚类和问题定位经验。"
+            },
+            {
+              "id": "initial-26",
+              "text": "参与过基于监控平台收集错误信息，并结合 AI 进行 Bug 分析、修复建议生成、测试用例生成和回归验证的研发提效流程。"
+            }
+          ]
+        },
+        {
+          "id": "initial-27",
+          "title": "工程化与协作",
+          "points": [
+            {
+              "id": "initial-28",
+              "text": "熟悉 Vite / Webpack 构建优化、ESLint、Prettier、Git Hooks、Git Flow、Code Review、技术文档沉淀和版本发布流程。"
+            },
+            {
+              "id": "initial-29",
+              "text": "能够与产品、后端、测试及客户侧沟通需求，推动 AI 应用从需求评审、技术方案、开发联调到上线验收。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "initial-79",
+      "type": "projects",
+      "title": "项目经历",
+      "items": [
+        {
+          "id": "initial-31",
+          "company": "成都知道创宇信息技术有限公司",
+          "name": "aipy客户端软件（官网: https://www.aipyaipy.com/#download）",
+          "start": "2025/06",
+          "end": "至今",
+          "role": "AI 应用开发 / 客户端开发",
+          "technologies": "Electron、React、TypeScript、Node.js、Python、LangChain、LangGraph、RAG、MCP、LLM API",
+          "description": "面向企业客户的 AI 客户端定制化平台，支持多类 Agent 接入、企业知识库问答、文件解析、工具调用、工作流编排和多智能体协作。平台可根据不同行业客户需求配置专属智能体，例如合同审核、邮件数据提取、图片生成/编辑、视频生成等场景，帮助企业将大模型能力落地到具体业务流程中。",
+          "responsibilitiesLabel": "个人职责",
+          "outcomesLabel": "项目成果",
+          "responsibilities": [
+            {
+              "id": "initial-32",
+              "text": "负责 Electron + React 客户端核心模块开发，包括会话界面、Agent 列表、任务状态、文件上传、流式输出、知识库配置、执行日志等功能。"
+            },
+            {
+              "id": "initial-33",
+              "text": "参与 Agent 架构设计，根据业务目标拆解任务流程，设计 Prompt 模板、工具调用链路、上下文管理和异常兜底策略。"
+            },
+            {
+              "id": "initial-34",
+              "text": "基于 RAG 构建企业知识库问答能力，支持文档解析、文本切分、向量检索、上下文拼接、引用溯源和回答优化。"
+            },
+            {
+              "id": "initial-35",
+              "text": "使用 Node.js 封装服务层接口，统一处理模型调用、任务状态、用户鉴权、文件处理、日志记录和第三方工具接入。"
+            },
+            {
+              "id": "initial-36",
+              "text": "使用 Python 参与 Agent 编排、LangChain / LangGraph 工作流开发、模型接口调用和自动化评测脚本编写。"
+            },
+            {
+              "id": "initial-37",
+              "text": "对接 MCP 和 Tool Calling 能力，将企业内部系统、第三方 API、文件处理工具和大模型能力打通。"
+            },
+            {
+              "id": "initial-38",
+              "text": "参与多智能体协作流程设计，通过任务拆解、角色分工、结果校验和反思机制，提升复杂任务执行的稳定性。"
+            },
+            {
+              "id": "initial-39",
+              "text": "针对企业定制化需求，抽象 Agent 配置、工具配置、Prompt 配置和知识库配置能力，减少重复开发成本。"
+            }
+          ],
+          "outcomes": [
+            {
+              "id": "initial-40",
+              "text": "支持多个企业级垂类 Agent 场景落地，包括视频生成、邮件数据提取、合同审核、图片生成/编辑等。"
+            },
+            {
+              "id": "initial-41",
+              "text": "沉淀客户端会话、流式输出、文件上传、任务状态、Agent 配置、知识库接入等通用模块。"
+            },
+            {
+              "id": "initial-42",
+              "text": "通过 RAG、Prompt 优化和工具调用，提升复杂业务问答和任务执行的准确性与可控性。"
+            },
+            {
+              "id": "initial-43",
+              "text": "通过配置化 Agent 和 Skill 工作流，降低企业客户定制化开发成本。"
+            },
+            {
+              "id": "initial-44",
+              "text": "实施加载与渲染性能优化，任务列表首屏耗时降低 50%，LCP 由原来的 2-3s 降至 1s 以内。"
+            },
+            {
+              "id": "initial-45",
+              "text": "使用 Web Worker 分流密集型同步任务，避免主线程阻塞，解决客户端“未响应”问题。"
+            }
+          ]
+        },
+        {
+          "id": "initial-46",
+          "company": "名人居门窗有限公司",
+          "name": "SCRM 分账管理系统",
+          "start": "2024/11",
+          "end": "2025/06",
+          "role": "前端负责人 / 中后台开发",
+          "technologies": "",
+          "description": "面向门窗制造企业的智能化分销商分账及供应链管理平台，集成多级分账计算、订单物流追踪、角色权限管理三大核心模块，支持日均 1 万+订单数据的高并发处理，助力企业实现分销体系数字化升级。",
+          "responsibilitiesLabel": "工作内容和成果",
+          "outcomesLabel": "项目成果",
+          "responsibilities": [
+            {
+              "id": "initial-47",
+              "text": "设计并优化万级数据表格渲染方案，采用虚拟滚动、分片加载、列固定等技术，实现毫秒级渲染并保持 60FPS 流畅交互。"
+            },
+            {
+              "id": "initial-48",
+              "text": "设计 RBAC 权限控制系统，支持 20+ 角色组合配置，权限粒度精确到按钮和 API 级别，保障敏感操作安全。"
+            },
+            {
+              "id": "initial-49",
+              "text": "封装 SmartTable 通用表格组件，基于 Element Plus 实现零代码动态渲染，仅需传入 columns 和 dataSource 即可生成完整表格，减少约 80% 重复代码。"
+            },
+            {
+              "id": "initial-50",
+              "text": "集成分页、排序、筛选、列宽自适应、插件扩展和虚拟滚动能力，覆盖复杂业务场景，提升中后台页面开发效率。"
+            },
+            {
+              "id": "initial-51",
+              "text": "构建前端可观测性体系，支持 HTTP 网络监控、接口成功率/耗时统计、慢请求识别、JS 错误、Promise 异常和 Vue 渲染错误捕获。"
+            },
+            {
+              "id": "initial-52",
+              "text": "参与前端可观测性建设，接入接口耗时、JS 异常、Promise 异常、Vue 渲染错误和 TraceID 定位能力，帮助团队缩短线上问题定位时间，并支撑告警、排查和复盘流程。"
+            }
+          ],
+          "outcomes": []
+        },
+        {
+          "id": "initial-53",
+          "company": "昆明彩瀚科技有限公司",
+          "name": "CatesApp 及后台管理维护",
+          "start": "2023/10",
+          "end": "2024/10",
+          "role": "前端开发 / 跨端适配",
+          "technologies": "Vue3、Pinia、Vite、Ionic、i18n、Vuexy、html2Canvas、qrcodejs",
+          "description": "面向海外市场的餐厅点餐及配送系统，包含多语言用户端 Web 应用和商家后台管理系统，实现菜单浏览、在线支付、订单追踪、商家库存管理等全流程数字化能力，提升餐厅运营效率与用户体验。",
+          "responsibilitiesLabel": "工作内容和成果",
+          "outcomesLabel": "项目成果",
+          "responsibilities": [
+            {
+              "id": "initial-54",
+              "text": "主导技术选型，采用 Vue3 + Vite 搭建高性能前端工程架构，集成 ESLint、Prettier、Git Hooks 统一代码规范，团队协作效率提升 30%。"
+            },
+            {
+              "id": "initial-55",
+              "text": "设计模块化请求层，基于 Axios 封装统一拦截器，实现接口签名、Token 刷新、错误兜底和异常处理，异常请求处理耗时减少 40%。"
+            },
+            {
+              "id": "initial-56",
+              "text": "实施分级加载策略，静态资源通过图片懒加载和 WebP 压缩降低带宽消耗 50%；动态内容采用骨架屏和 Keep-alive 缓存，页面切换速度提升 60%。"
+            },
+            {
+              "id": "initial-57",
+              "text": "基于 Vite 配置代码分割和 Tree Shaking，生产包体积缩减 35%，首屏加载时间优化至 1.2s 内。"
+            },
+            {
+              "id": "initial-58",
+              "text": "开发支付闭环方案，集成 qrcodejs 生成动态支付二维码，支持扫码支付，覆盖 Alipay / Stripe 等支付场景。"
+            },
+            {
+              "id": "initial-59",
+              "text": "设计 HTTP 轮询支付状态检测机制，实现订单支付状态自动同步，将支付结果反馈时间控制在约 3 秒内，提升支付流程体验。"
+            },
+            {
+              "id": "initial-60",
+              "text": "使用 html2Canvas 实现订单截图存档，解决跨国支付纠纷中的凭证留存问题。"
+            },
+            {
+              "id": "initial-61",
+              "text": "优化弱网和国际化体验，通过请求重试、本地缓存降级、i18n 语言包按需加载等策略，使弱网环境操作成功率提升 45%，多语言切换延迟降低 70%。"
+            }
+          ],
+          "outcomes": []
+        },
+        {
+          "id": "initial-62",
+          "company": "昆明彩瀚科技有限公司",
+          "name": "微信公众号及后台管理",
+          "start": "2023/12",
+          "end": "2024/05",
+          "role": "前端开发 / AI 能力集成",
+          "technologies": "",
+          "description": "开发口腔医疗咨询助手及口腔科普平台，集成海报宣传功能和后台管理系统。项目支持基于微信生态的用户交互，同时提供内容管理、用户权限管理和 AI 咨询能力。",
+          "responsibilitiesLabel": "工作内容和成果",
+          "outcomesLabel": "项目成果",
+          "responsibilities": [
+            {
+              "id": "initial-63",
+              "text": "主导项目从 0 到 1 的技术选型与架构搭建，制定 ESLint / Stylelint 质量管控体系，保障工程化标准。"
+            },
+            {
+              "id": "initial-64",
+              "text": "设计分层架构与核心模块，通过组件化设计提升团队协作效率，降低后续维护成本。"
+            },
+            {
+              "id": "initial-65",
+              "text": "构建用户鉴权体系，结合 Token 校验与调用频次限制，保障 AI 接口调用安全性和服务稳定性。"
+            },
+            {
+              "id": "initial-66",
+              "text": "对接微信支付模块，设计会员/非会员分层权限逻辑，实现 AI 助手功能服务的差异化管控。"
+            },
+            {
+              "id": "initial-67",
+              "text": "开发无感 Token 刷新机制，通过响应拦截器自动处理鉴权状态，优化用户持续操作体验。"
+            },
+            {
+              "id": "initial-68",
+              "text": "基于 html2Canvas 实现页面高保真截图功能，解决跨浏览器渲染兼容性问题，保障功能在生产环境稳定运行。"
+            },
+            {
+              "id": "initial-69",
+              "text": "接入 GPT-4 对话能力，基于 stream 实现流式响应渲染，并通过 parentId 维护多轮会话上下文，支持口腔咨询类连续问答场景。"
+            }
+          ],
+          "outcomes": []
+        },
+        {
+          "id": "initial-70",
+          "company": "昆明彩瀚科技有限公司",
+          "name": "供应链管理系统",
+          "start": "2023/01",
+          "end": "2023/07",
+          "role": "前端技术负责人",
+          "technologies": "",
+          "description": "供应链智能管理平台，面向企业级客户，集成供应商协同、智能采购、生产计划、全域库存管理、物流追踪及支付结算等能力。通过数字化手段优化从选品到交付的全链路流程，降低企业运营成本，提升供应链响应效率。",
+          "responsibilitiesLabel": "工作内容和成果",
+          "outcomesLabel": "项目成果",
+          "responsibilities": [
+            {
+              "id": "initial-71",
+              "text": "作为前端技术负责人，参与平台前端架构设计和核心模块开发，基于 React + Ant Design 完成供应商协同、采购、库存、物流等业务模块。"
+            },
+            {
+              "id": "initial-72",
+              "text": "推进业务模块拆分和公共组件沉淀，封装表格、筛选、弹窗、权限按钮、地图渲染、图表卡片等 20+ 复用组件，提升多模块开发效率。"
+            },
+            {
+              "id": "initial-73",
+              "text": "基于 ECharts 和高德地图 SDK 实现库存热力图、物流轨迹、区域分布和时效分析等可视化能力。"
+            },
+            {
+              "id": "initial-74",
+              "text": "使用高德地图 SDK 封装业务地图渲染器 MapRender，支持地图散点、物流信息、区域数据等业务展示能力。"
+            },
+            {
+              "id": "initial-75",
+              "text": "牵头搭建前端资产库，沉淀业务组件库和工具函数库，形成 15+ 标准化组件，团队开发效率提升 30%。"
+            },
+            {
+              "id": "initial-76",
+              "text": "制定代码质量规范，集成 Git 提交校验和 ESLint 自动化检测，Code Review 问题数减少 50%。"
+            },
+            {
+              "id": "initial-77",
+              "text": "针对首页首屏性能进行优化，通过接口聚合、资源懒加载、缓存策略和首屏关键内容优先渲染，将 FCP 从约 3.2s 优化至约 1.4s。"
+            },
+            {
+              "id": "initial-78",
+              "text": "通过虚拟滚动和分片加载策略解决万级 SKU 列表卡顿问题，列表渲染帧率稳定在 60FPS。"
+            }
+          ],
+          "outcomes": []
+        }
+      ]
+    }
+  ]
+}
