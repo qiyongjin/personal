@@ -1,0 +1,130 @@
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid #dce5ef;
+  border-radius: 6px;
+  background: #f7f9fc;
+  flex-shrink: 0;
+}
+.language-switch button {
+  padding: 6px 9px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #64748b;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.language-switch button[aria-pressed="true"] {
+  background: #fff;
+  color: #1d4ed8;
+  box-shadow: 0 1px 4px #14294515;
+}
+.translation-panel {
+  max-width: 1528px;
+  margin: 0 36px 24px;
+  padding: 18px 22px;
+  border: 1px solid #dce5ef;
+  border-radius: 8px;
+  background: #fff;
+}
+.translation-panel__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.translation-panel__tabs {
+  display: flex;
+  gap: 5px;
+}
+.translation-panel__tabs button {
+  padding: 9px 14px;
+  font-size: 12px;
+  background: #f1f5fa;
+  color: #526a88;
+  border-radius: 5px;
+}
+.translation-panel__tabs button[aria-pressed="true"] {
+  background: #eaf1fc;
+  color: #1d4ed8;
+}
+.translation-panel p,
+.translation-empty p {
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.8;
+  margin: 10px 0 0;
+}
+.translation-panel .translation-warning {
+  color: #94651e;
+}
+.translation-panel__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.translation-panel__actions button {
+  font-size: 12px;
+  border-radius: 5px;
+}
+.translation-empty {
+  margin: 20px auto;
+  max-width: 760px;
+  padding: 48px 24px;
+  background: #fff;
+  text-align: center;
+  border: 1px solid #dce5ef;
+  border-radius: 8px;
+}
+.translation-empty h2 {
+  font-size: 20px;
+}
+.translation-empty button {
+  margin-top: 18px;
+}
+.login-main {
+  position: relative;
+}
+.login-language {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+@media (min-width: 1600px) {
+  .translation-panel {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 1000px) {
+  .translation-panel {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 760px) {
+  .translation-panel {
+    margin: 0 14px 16px;
+    padding: 16px;
+  }
+  .studio-header__actions,
+  .public-toolbar__actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .studio-header {
+    align-items: flex-start;
+  }
+  .studio-header__actions {
+    gap: 10px;
+    max-width: 60%;
+  }
+  .savebar-actions {
+    flex-wrap: wrap;
+  }
+}

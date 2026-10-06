@@ -10,6 +10,15 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+dist-server
+data/
+.env
+.env.*
+!.env.example
+test-results/
+playwright-report/
+tmp/
+output/
 *.local
 
 # Editor directories and files
@@ -22,3 +31,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Python backend
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist-print/

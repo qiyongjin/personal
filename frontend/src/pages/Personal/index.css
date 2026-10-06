@@ -1,0 +1,93 @@
+.personal-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 8% 0, #dbeafe 0, transparent 45%), #f1f5fb;
+  color: #102033;
+}
+.public-toolbar {
+  max-width: 1040px;
+  padding: 28px 0 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.public-toolbar__date {
+  display: block;
+  margin-top: 5px;
+  color: #64748b;
+  font-size: 11px;
+}
+.public-toolbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 13px;
+}
+.resume-layout {
+  width: min(1040px, calc(100% - 32px));
+  margin: 0 auto;
+}
+.public-footer {
+  text-align: center;
+  color: #64748b;
+  font-size: 12px;
+  padding: 30px 0;
+}
+.download-control {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.download-control small {
+  display: block;
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 5px;
+}
+.download-control .feedback {
+  max-width: 300px;
+  font-size: 12px;
+}
+@media (max-width: 1100px) {
+  .public-toolbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .public-toolbar {
+    align-items: flex-start;
+    padding: 20px 16px;
+  }
+  .public-toolbar__actions {
+    gap: 10px;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+  .public-toolbar .eyebrow {
+    font-size: 9px;
+  }
+  .download-control .download-button{
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 5px;
+  }
+  .resume-layout {
+    width: 100%;
+  }
+}
+@media print {
+  .public-toolbar,
+  .public-footer {
+    display: none;
+  }
+  .personal-page {
+    background: white;
+  }
+  .resume-layout {
+    width: 100%;
+  }
+}

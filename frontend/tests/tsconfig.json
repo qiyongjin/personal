@@ -1,0 +1,7 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "types": ["node"]
+  },
+  "include": ["./**/*.tsx", "../shared/**/*.tsx", "../shared/**/*.ts"]
+}
