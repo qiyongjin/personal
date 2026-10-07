@@ -23,8 +23,8 @@ def create_database(url: str) -> Engine:
         @event.listens_for(engine, "connect")
         def configure_sqlite(connection: Any, _: Any) -> None:
             cursor = connection.cursor()
-            cursor.execute("PRAGMA journal_mode=WAL")
             cursor.execute("PRAGMA busy_timeout=15000")
+            cursor.execute("PRAGMA journal_mode=WAL")
             cursor.close()
 
     return engine
@@ -32,7 +32,9 @@ def create_database(url: str) -> Engine:
 
 def initialize_database(engine: Engine) -> None:
     """Create missing tables and retain existing SQLite resume data."""
-    with engine.begin() as connection:
+    with engine.connect() as connection:
+        # Serialize schema inspection and DDL across Gunicorn workers.
+        connection.exec_driver_sql("BEGIN IMMEDIATE")
         inspector = inspect(connection)
         if inspector.has_table("resume"):
             columns = {column["name"] for column in inspector.get_columns("resume")}
@@ -41,3 +43,4 @@ def initialize_database(engine: Engine) -> None:
             if "english" not in columns:
                 connection.exec_driver_sql("ALTER TABLE resume ADD COLUMN english TEXT")
         Base.metadata.create_all(connection)
+        connection.commit()
