@@ -1,4 +1,6 @@
 import sqlite3
+import sys
+from concurrent.futures import ThreadPoolExecutor
 from unittest.mock import AsyncMock
 
 import pytest
@@ -8,6 +10,7 @@ from app.application import create_app
 from app.core.config import ROOT, Settings
 from app.core.security import hash_password
 from app.database import create_database, initialize_database
+from app.repository import ResumeRepository, SessionRepository
 from app.schemas import EnglishResume, ResumeData
 
 PASSWORD = "test-password-123"
@@ -144,3 +147,45 @@ def test_database_rejects_unknown_schema(tmp_path):
             initialize_database(engine)
     finally:
         engine.dispose()
+
+
+def test_gunicorn_entry_point(monkeypatch, tmp_path):
+    from gunicorn.util import import_app
+
+    config = Settings(
+        admin_username="admin",
+        admin_password_hash=hash_password(PASSWORD),
+        database_url=f"sqlite:///{tmp_path / 'gunicorn.sqlite'}",
+    )
+    monkeypatch.setattr(Settings, "load", classmethod(lambda cls: config))
+    monkeypatch.delitem(sys.modules, "main", raising=False)
+    try:
+        app = import_app("main:app")
+        with TestClient(app) as client:
+            assert client.get("/api/resume").status_code == 200
+    finally:
+        sys.modules.pop("main", None)
+
+
+def test_four_workers_initialize_same_database(tmp_path):
+    path = tmp_path / "shared.sqlite"
+    seed = ResumeData.model_validate_json((ROOT / "resources/initial-resume.json").read_text())
+
+    def start_worker(_):
+        engine = create_database(f"sqlite:///{path}")
+        try:
+            initialize_database(engine)
+            resumes = ResumeRepository(engine)
+            resumes.initialize(seed)
+            sessions = SessionRepository(engine)
+            token = sessions.create()
+            assert sessions.valid(token)
+            assert resumes.read().version == 1
+        finally:
+            engine.dispose()
+
+    with ThreadPoolExecutor(max_workers=4) as workers:
+        list(workers.map(start_worker, range(4)))
+    with sqlite3.connect(path) as db:
+        assert db.execute("SELECT count(*) FROM resume").fetchone() == (1,)
+        assert db.execute("SELECT count(*) FROM sessions").fetchone() == (4,)

@@ -4,6 +4,7 @@ import time
 from datetime import UTC, datetime
 
 from sqlalchemy import Engine, delete, insert, select, update
+from sqlalchemy.dialects.sqlite import insert as sqlite_insert
 
 from .models import Resume, Session
 from .schemas import EnglishResume, ResumeData, ResumeRecord, SaveResume
@@ -19,14 +20,13 @@ class ResumeRepository:
         self.engine = engine
 
     def initialize(self, seed: ResumeData) -> None:
-        # Deployment runs as a single instance. Never overwrite an existing record.
+        # Each Gunicorn worker starts independently; seed only once, atomically.
         with self.engine.begin() as connection:
-            if connection.execute(select(Resume.id).where(Resume.id == 1)).first() is None:
-                connection.execute(
-                    insert(Resume).values(
-                        id=1, data=seed.model_dump_json(), english=None, version=1, updated_at=now()
-                    )
-                )
+            connection.execute(
+                sqlite_insert(Resume)
+                .values(id=1, data=seed.model_dump_json(), english=None, version=1, updated_at=now())
+                .on_conflict_do_nothing(index_elements=[Resume.id])
+            )
 
     def read(self) -> ResumeRecord:
         with self.engine.connect() as connection:
